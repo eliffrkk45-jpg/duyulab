@@ -1,0 +1,40 @@
+:root{color-scheme:dark;--bg:#06182f;--bg2:#0b3a5c;--card:#0d2a4a;--tx:#eaf6ff;--mu:#9cc3dc;--a:#2fd4e0;--g:#4ade80;--w:#ffb84d;--r:#ff6b81;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Baloo 2','Comic Sans MS',system-ui,sans-serif;background:radial-gradient(circle at 20% 0,var(--bg2),var(--bg) 70%) fixed;background-color:var(--bg);color:var(--tx);min-height:100vh;display:flex;flex-direction:column}
+header,footer{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#04101fcc;flex-wrap:wrap}
+header b{flex:1;color:var(--a)}
+#pts{color:var(--w)}
+main{flex:1;padding:14px;max-width:980px;width:100%;margin:0 auto}
+h1{font-size:clamp(28px,6vw,46px);margin:.2em 0;color:var(--a)}h2{color:var(--g);margin:.2em 0}
+.lead{font-size:1.15em;color:var(--mu)}
+.card{background:var(--card);border:1px solid #2fd4e033;border-radius:16px;padding:14px;margin:12px 0}
+.task{border-left:5px solid var(--w)}.obs{border-left:5px solid var(--g)}
+.btn,.opt,button{font:inherit;background:#124a74;color:var(--tx);border:1px solid var(--a);border-radius:12px;padding:8px 14px;margin:4px;cursor:pointer}
+.btn{background:var(--a);color:#032;font-weight:700}
+.opt{display:block;width:100%;text-align:left}
+.ok{background:#14663a!important;border-color:var(--g)}.no{background:#6b1f2e!important;border-color:var(--r);opacity:.7}
+.fb{margin-top:6px;color:var(--mu)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chain{display:flex;gap:6px;flex-wrap:wrap}
+.chain div{flex:1;min-width:120px;text-align:center;padding:12px;border-radius:14px;background:#0a2038;border:2px solid #2fd4e033;transition:.4s}
+.chain div.on{border-color:var(--w);background:#3a3010;transform:scale(1.05)}
+.pulse{display:flex;gap:10px;margin:18px 0}.pulse i{width:18px;height:18px;border-radius:50%;background:var(--a);animation:pl 1.4s infinite}.pulse i:nth-child(2){animation-delay:.3s;background:var(--g)}.pulse i:nth-child(3){animation-delay:.6s;background:var(--w)}
+@keyframes pl{50%{transform:translateY(-14px);opacity:.4}}
+body.rm *{animation:none!important;transition:none!important}
+#nsv{width:100%;background:#071b30;border-radius:14px}.p{cursor:pointer}.p:hover{filter:brightness(1.5)}
+[data-k=govde]{fill:#2a6fdb}[data-k=cekirdek]{fill:#8b5cf6}[data-k=miyelin] rect{fill:#f5c24a}[data-k=ranvier] circle{fill:#ff8fb1}[data-k=uc] circle{fill:#4ade80}
+[data-k=uc] path,[data-k=akson] path,[data-k=dendrit] path{stroke:#5fb4ff;stroke-width:7;fill:none;stroke-linecap:round}
+#imp{fill:#fff}
+.sim{display:flex;gap:14px;flex-wrap:wrap}.col{flex:1;min-width:140px;text-align:center}
+.bar{height:120px;background:#0a2038;border-radius:10px;position:relative;overflow:hidden;border:1px solid #2fd4e055}.bar i{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(var(--g),var(--a));transition:height .3s}
+.ax{display:flex;gap:4px;justify-content:center;margin:6px 0}.ax i{width:14px;height:26px;border-radius:5px;background:#26405b}.ax i.on{background:var(--w)}
+input[type=range]{width:100%}
+.cells{display:flex;gap:3px}.cells div{flex:1;text-align:center;border-radius:8px;padding:4px 0;background:#26405b;font-size:13px}
+.cells .d{background:#6b1f2e}.cells .r{background:#7a5a10}.cells .pl{background:#124a74}
+.steps button{display:block;width:100%;text-align:left}
+#toast{position:fixed;top:calc(env(safe-area-inset-top,0px) + 56px);left:50%;transform:translate(-50%,-90px);background:var(--w);color:#210;padding:8px 16px;border-radius:20px;transition:.4s;z-index:9;font-weight:700}#toast.on{transform:translate(-50%,0)}
+#dots{display:flex;gap:6px;flex:1;justify-content:center}#dots b{width:12px;height:12px;border-radius:50%;background:#26405b;cursor:pointer}#dots b.on{background:var(--a)}#dots b.dn{background:var(--g)}
+.sh{animation:sh .3s}@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.fade{animation:fd .5s}@keyframes fd{from{opacity:0;transform:translateY(14px)}}
+a{color:var(--a)}small{color:var(--mu)}
