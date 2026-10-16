@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Duyu Laboratuvarı</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><b>🔬 Duyu Laboratuvarı</b><span>⭐ <span id="pts">0</span></span><label><input type="checkbox" id="rm" onchange="document.body.classList.toggle('rm',this.checked)"> Hareketi azalt</label><button onclick="document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()">⛶</button></header>
+<main id="stage"></main><div id="toast"></div>
+<footer><button onclick="go(i-1)">◀</button><div id="dots"></div><button onclick="go(i+1)">▶</button></footer>
+<script src="js/app.js"></script></body></html>
